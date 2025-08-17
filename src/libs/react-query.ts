@@ -5,4 +5,3 @@ export const globalQueryClient = new QueryClient({
     queries: {},
   },
 });
-

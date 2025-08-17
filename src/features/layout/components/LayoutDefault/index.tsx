@@ -1,5 +1,6 @@
-import { Outlet, ScrollRestoration } from '@tanstack/react-router';
-import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
+import { Outlet } from '@tanstack/react-router';
+import { TanStackRouterDevtools } from '@tanstack/react-router-devtools';
+
 import { TheHeader } from '../TheHeader';
 
 type LayoutDefaultProps = {
@@ -11,9 +12,7 @@ function LayoutDefaultPure({ children }: LayoutDefaultProps) {
     <div className="grid grid-rows-[auto_auto_1fr] min-h-svh">
       <TheHeader />
 
-      <main className="flex flex-col flex-1 px-4">
-        {children}
-      </main>
+      <main className="flex flex-col flex-1 px-4">{children}</main>
     </div>
   );
 }
@@ -21,15 +20,13 @@ function LayoutDefaultPure({ children }: LayoutDefaultProps) {
 function LayoutDefaultRouter() {
   return (
     <LayoutDefaultPure>
-      <ScrollRestoration />
       <Outlet />
       <TanStackRouterDevtools />
     </LayoutDefaultPure>
   );
 }
 
-export const LayoutDefault = {
-  Pure: LayoutDefaultPure,
-  Router: LayoutDefaultRouter,
-};
+export function LayoutDefault() {}
 
+LayoutDefault.Pure = LayoutDefaultPure;
+LayoutDefault.Router = LayoutDefaultRouter;

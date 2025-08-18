@@ -22,11 +22,11 @@
     "@tanstack/react-router": "^1.131.25",
     "@tanstack/react-router-devtools": "^1.131.25",
     "clsx": "^2.1.1",
-    "ky": "^1.8.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "tailwind-merge": "^3.3.1",
     "tailwindcss": "^4.1.12",
+    "wretch": "^2.11.0",
     "zod": "^4.0.17"
   },
   "devDependencies": {

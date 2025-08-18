@@ -17,8 +17,12 @@ Out of the box, this scaffold includes:
 * ⚛️ **React Ecosystem**
 
   * React with the React Compiler enabled
-  * @tanstack/react-query for data fetching & caching
   * @tanstack/react-router for routing
+
+* 🌐 **API / Data Fetching**
+
+  * @tanstack/react-query for caching and state management
+  * [wretch](https://github.com/elbywan/wretch) for HTTP requests
 
 * 🛠️ **Tooling**
 

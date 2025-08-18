@@ -1,4 +1,4 @@
-# Scaffold for SPA Apps (WIP)
+# Scaffold for SPA Apps (WIP - template in construction)
 
 A personal **opinionated boilerplate** for building modern React single-page applications.
 It exists mainly to help me start projects faster and with less friction.

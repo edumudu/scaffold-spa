@@ -40,6 +40,20 @@ Out of the box, this scaffold includes:
 
   * Zod for schema validation
 
+* 🌐 **Browser Support**
+
+  This scaffold supports the following minimum browser versions:
+
+  * **Chrome** ≥ 107
+  * **Edge** ≥ 107
+  * **Firefox** ≥ 104
+  * **Safari** ≥ 16
+
+  Additional compatibility features:
+
+  * 🧩 **Polyfills** configured (powered by [@vitejs/plugin-legacy](https://github.com/vitejs/vite-plugin-legacy))
+  * 🔄 **Syntax transforms** configured (powered by [Vite](https://github.com/vitejs/vite))
+
 ## Architecture
 
 This project’s structure is **inspired by [bulletproof-react](https://github.com/alan2207/bulletproof-react)**, with some personal adjustments.

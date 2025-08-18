@@ -1,69 +1,44 @@
-# React + TypeScript + Vite
+# Scaffold for SPA Apps (WIP)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal **opinionated boilerplate** for building modern React single-page applications.
+It exists mainly to help me start projects faster and with less friction.
+This template provides a solid starting point with common tools and configurations already set up.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Out of the box, this scaffold includes:
 
-## Expanding the ESLint configuration
+* ✅ **Linting & Formatting**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+  * ESLint fully configured
+  * Prettier integration
+  * Commitlint + Husky for commit consistency
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* ⚛️ **React Ecosystem**
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+  * React with the React Compiler enabled
+  * @tanstack/react-query for data fetching & caching
+  * @tanstack/react-router for routing
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+* 🛠️ **Tooling**
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+  * Vite for fast builds & dev server
+  * Vitest + Vitest browser for unit & integration tests
+  * Cursor / Windsurf rules (WIP)
+  * Browser debugger configured 
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+* 🎨 **Styling & UI**
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+  * Tailwind CSS configured
+  * Radix Themes out of the box
+
+* 🔒 **Validation**
+
+  * Zod for schema validation
+
+## Architecture
+
+This project’s structure is **inspired by [bulletproof-react](https://github.com/alan2207/bulletproof-react)**, with some personal adjustments.
+The goal is to provide a maintainable, scalable, and opinionated structure for React apps.
+
+*(WIP)*

@@ -33,7 +33,7 @@ Out of the box, this scaffold includes:
 
 * 🎨 **Styling & UI**
 
-  * Tailwind CSS configured
+  * Tailwind v4 CSS configured
   * Radix Themes out of the box
 
 * 🔒 **Validation**

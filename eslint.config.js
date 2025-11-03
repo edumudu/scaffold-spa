@@ -17,7 +17,7 @@ export default tseslint.config([
   ...pluginQuery.configs['flat/recommended'],
   ...pluginRouter.configs['flat/recommended'],
   pluginVitest.configs.recommended,
-  reactHooks.configs['recommended-latest'],
+  reactHooks.configs.flat['recommended-latest'],
   eslintPluginUnicorn.configs.recommended,
 
   {
@@ -78,4 +78,11 @@ export default tseslint.config([
 
   eslintConfigPrettier,
   eslintPluginPrettierRecommended,
+
+  {
+    files: ['./src/routeTree.gen.ts'],
+    rules: {
+      'unicorn/no-abusive-eslint-disable': 'off',
+    },
+  },
 ]);

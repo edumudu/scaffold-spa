@@ -38,6 +38,9 @@ importers:
       tailwindcss:
         specifier: ^4.1.12
         version: 4.1.12
+      univerto:
+        specifier: ~0.4.1
+        version: 0.4.1
       wretch:
         specifier: ^2.11.0
         version: 2.11.0
@@ -4495,6 +4498,10 @@ packages:
   universalify@0.2.0:
     resolution: {integrity: sha512-CJ1QgKmNg3CwvAv/kOFmtnEN05f0D/cn9QntgNOQlQF9dgvVTHj3t+8JPdjqawCHk7V/KA+fbUqzZ9XWhcqPUg==}
     engines: {node: '>= 4.0.0'}
+
+  univerto@0.4.1:
+    resolution: {integrity: sha512-Ym4Bxt/tAdN94bqVBs8YZrHo6l9Wwk9d+1O9T637vDCqGJor2HdX8rfQJN/aQQJZNEEJpqr47h8lhXW60OPjmw==}
+    engines: {node: '>=18.0.0'}
 
   unplugin@2.3.6:
     resolution: {integrity: sha512-+/MdXl8bLTXI2lJF22gUBeCFqZruEpL/oM9f8wxCuKh9+Mw9qeul3gTqgbKpMeOFlusCzc0s7x2Kax2xKW+FQg==}
@@ -9582,6 +9589,8 @@ snapshots:
 
   universalify@0.2.0:
     optional: true
+
+  univerto@0.4.1: {}
 
   unplugin@2.3.6:
     dependencies:

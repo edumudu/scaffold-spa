@@ -60,6 +60,7 @@ export default tseslint.config([
       'unicorn/prevent-abbreviations': 'off',
 
       // import
+      'import/no-unresolved': 'off', // handled by typescript itself
       'import/prefer-default-export': 'off',
       'import/order': [
         'error',
